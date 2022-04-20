@@ -7,7 +7,7 @@ const et = require('elementtree');
 
 class PaymentVerifyBase{
     constructor(){
-        this.param_xml_file = fs.readFileSync(__dirname + '/../../lib/ecpay_payment/FunPointPayment.xml').toString();
+        this.param_xml_file = fs.readFileSync(__dirname + '/../../lib/funpoint_payment/FunPointPayment.xml').toString();
         this.param_xml = et.parse(this.param_xml_file);
     }
 
